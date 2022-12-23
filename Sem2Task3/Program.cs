@@ -42,7 +42,7 @@ int getNumber(string messege)
     int number = int.Parse(Console.ReadLine());
     return number;
 }
-int threeDidget( int number)
+int threeDigit( int number)
 {
     while (number / 1000 > 0)
     {
@@ -59,7 +59,7 @@ if(number/100 == 0)
 }
 else
 {
-int threeDid = threeDidget(number);
+int threeDid = threeDigit(number);
 Console.WriteLine(threeDid);
 }
 
