@@ -19,7 +19,7 @@ void printArray(int[] array)
     for (int i = 0; i < array.Length; i++)
     {
         Console.Write(array[i]);
-        if(i<array.Length - 1)
+        if (i < array.Length - 1)
         {
             Console.Write(", ");
         }
@@ -29,14 +29,14 @@ void printArray(int[] array)
 
 int sumOfEvenIndex(int[] array)
 {
-    int sum= 0;
-    for (int i = 0; i < array.Length; i=i+2)
+    int sum = 0;
+    for (int i = 0; i < array.Length; i = i + 2)
     {
-        sum = sum+ array[i];
+        sum = sum + array[i];
     }
     return sum;
 }
 
-int[] array = generateArray(11,0,10);
+int[] array = generateArray(11, 0, 10);
 printArray(array);
 Console.WriteLine($"сумма элементов, стоящих на нечётных позициях {sumOfEvenIndex(array)}");
