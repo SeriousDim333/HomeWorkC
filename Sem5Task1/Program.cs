@@ -19,7 +19,7 @@ void printArray(int[] array)
     for (int i = 0; i < array.Length; i++)
     {
         Console.Write(array[i]);
-        if(i<array.Length -1)
+        if (i < array.Length - 1)
         {
             Console.Write(", ");
         }
@@ -32,7 +32,7 @@ int countEven(int[] array)
     int count = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        if(array[i]%2 == 0)
+        if (array[i] % 2 == 0)
         {
             count++;
         }
@@ -40,6 +40,6 @@ int countEven(int[] array)
     return count;
 }
 
-int[] array = generateArray(5,100,1000);
+int[] array = generateArray(5, 100, 1000);
 printArray(array);
 Console.WriteLine($"четных чисел {countEven(array)}");
