@@ -10,10 +10,21 @@ int number(string message)
 
 void intersectionPoint(double b1, double k1, double b2, double k2)
 {
-    double x = (-b1 + b2) / (k1 - k2);
-    double y = k1 * x + b1;
 
-    Console.WriteLine($"точка пересечения ({x}; {y})");
+    if(k1==k2 && b1==b2)
+    {
+        Console.WriteLine("прямые совпадают");
+    }
+    else if(k1==k2)
+    {
+        Console.WriteLine("прямые параллельны");
+    }
+    else
+    {
+        double x = (-b1 + b2) / (k1 - k2);
+        double y = k1 * x + b1;
+        Console.WriteLine($"точка пересечения ({x}; {y})");
+    }
 }
 
 double b1 = number("введите число b1");
